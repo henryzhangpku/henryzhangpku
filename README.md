@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @henryzhangpku
-- 👀 I’m interested in FinTech
+- 👀 I’m interested in TikTok,NFT and Quant Trading
 - 🌱 I’m currently creating AlphaGen
 - 💞️ I’m looking to collaborate on startup projects
 - 📫 How to reach me at http://officialhenryzhang.com/
