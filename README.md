@@ -2,7 +2,7 @@
 - 👀 I’m interested in Quant Technology.
 - 🌱 I’m currently creating AlphaGen
 - 💞️ I’m looking to collaborate on startup projects
-- 📫 How to reach me at http://officialhenryzhang.com/
+- 📫 How to reach me at https://www.quantsignals.xyz/
 
 <!---
 henryzhangpku/henryzhangpku is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
