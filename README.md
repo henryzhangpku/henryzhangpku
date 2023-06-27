@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @henryzhangpku
 - 👀 I’m interested in Quant Technology.
-- 🌱 I’m currently creating AlphaGen
-- 💞️ I’m looking to collaborate on startup projects
+- 🌱 I’m currently creating QuantSignals.
+- 💞️ I’m looking to collaborate on startup projects.
 - 📫 How to reach me at https://www.quantsignals.xyz/
 
 <!---
