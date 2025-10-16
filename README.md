@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @henryzhangpku
-- 👀 I’m interested in Quant Technology.
+- 👀 I’m interested in AI + Quant.
 - 🌱 I’m currently creating QuantSignals.
 - 💞️ I’m looking to collaborate on startup projects.
 - 📫 How to reach me at [[https://officialhenryzhang.com/]](https://officialhenryzhang.com/)
