@@ -6,7 +6,7 @@
 ## Options Signals
 
 * [⁠⏰live-0dte-signals](options-signals/live-0dte-signals.md)
-* [📅 live-weekly-signals](options-signals/live-weekly-signals.md)
+* [📅 live-weekly-signals](options-signals/live-weekly-options-signals.md)
 * [🔄live-swing-signals](options-signals/live-swing-signals.md)
 * [⌛live-leap-signals](options-signals/live-leap-signals.md)
 * [💸live-earning-signals](options-signals/live-earning-signals.md)

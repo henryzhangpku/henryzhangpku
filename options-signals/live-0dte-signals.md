@@ -1,6 +1,6 @@
 # ⁠⏰live-0dte-signals
 
-## ⁠⏰Live 0DTE Signals
+## ⁠⏰live-0dte-signals
 
 Same-day option trades are designed for quick in-and-out moves, with real-time alerts to guide entries and exits. (Typical type: SPX, SPY, QQQ, IWM)**Live 0DTE Signals**
 
