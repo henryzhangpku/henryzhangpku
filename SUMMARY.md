@@ -37,7 +37,7 @@
 ## QS V3
 
 * [What is QS V3 ?](qs-v3/what-is-qs-v3.md)
-* [🎰Live\_kline\_signals](qs-v3/live_kline_signals.md)
+* [🎰live-kline-signals](qs-v3/live-kline-signals.md)
 * [Why K-Line Is a Game-Changer](qs-v3/why-k-line-is-a-game-changer.md)
 
 ***
