@@ -24,3 +24,4 @@ _**For Signals & Alerts:**_
 * _**Live-Forex Signals** – Forex trade opportunities_
 * _**Live-Crypto Signals** – Cryptocurrency signals_
 * _**Live-Stocks Signals** – Stock market signals_
+* <mark style="color:$primary;">Live-Kline Signals – QS V3 new invention to leverage TSFM(time series foundational model) for trade prediction.</mark>
