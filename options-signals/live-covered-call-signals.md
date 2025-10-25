@@ -2,6 +2,6 @@
 
 ## 🦔live-covered-call-signals
 
-Income / Defensive: QS V3 ELITE COVERED CALL ANALYSIS**🦔 live-covered-call-signals:** ➡ _Smart covered-call income plays for conservative traders._
+Cover Call
 
 _`!cover NVDA`_

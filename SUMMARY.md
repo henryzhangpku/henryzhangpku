@@ -28,7 +28,7 @@
 
 ## AI Screeners
 
-* [Intro](ai-screeners/intro.md)
+* [How to Select What to Play ?](ai-screeners/how-to-select-what-to-play.md)
 * [📰live-news-signals](ai-screeners/live-news-signals.md)
 * [🤖live-unusual-options](ai-screeners/live-unusual-options.md)
 * [💥live-small-options](ai-screeners/live-small-options.md)

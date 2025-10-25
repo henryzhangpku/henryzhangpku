@@ -1,6 +1,6 @@
-# Intro
+# How to Select What to Play ?
 
-## Intro
+## How to Select What to Play ?
 
 QS have 4 AI screeners to select play of day ⁠📰live-news-signals ⁠🤖live-unusual-options ⁠💥live-small-options ⁠🎲live-wsb-signals
 
