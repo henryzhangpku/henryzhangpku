@@ -1,6 +1,6 @@
-# 📅 live-weekly-options-signals
+# 📅 live-weekly-signals
 
-## 📅 live-weekly-options-signals
+## 📅 live-weekly-signals
 
 A trading signal for short-term options traders. Designed for 5–7 day holds, it focuses on weekly cycles to capture quick moves while keeping risk in check.
 
