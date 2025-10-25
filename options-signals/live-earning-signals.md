@@ -9,3 +9,5 @@ Real-time signals showing potential short-term trades around earnings reports**L
 * Goal: Capture quick price moves caused by earnings announcements with timely entries and exits
 
 **Two things:** AMC: after market close, BMO: before market open (for each week will show in the 📅earning-calendar)
+
+_`!earning NVDA`_

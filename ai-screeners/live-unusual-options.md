@@ -19,4 +19,4 @@ _**🎯 What Live Unusual/Momentum Signals Do?**_
    * <sup>_Advises_</sup><sup>_&#x20;_</sup><sup>_**position sizing**_</sup><sup>_&#x20;_</sup><sup>_(typically 2–3%) because momentum trades can reverse quickly._</sup>
    * <sup>_Encourages monitoring for rapid price changes._</sup>
 
-**Ex:** 👇 AI annalysis<sup>_**⚠️Risk Management: Use 2-3% position sizing. Momentum can reverse quickly**_</sup>
+_`!screen`_ &#x20;

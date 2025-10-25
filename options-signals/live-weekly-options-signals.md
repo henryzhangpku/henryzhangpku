@@ -10,3 +10,5 @@ A trading signal for short-term options traders. Designed for 5–7 day holds, i
 * **Holding Period:** 5–7 day holding period
 * **Goal:** Balance between speed and risk management, using weekly cycles
 * **Why Premium matters:** Complete watchlist + risk-adjusted plays curated weekly
+
+_`!weekly NVDA`_

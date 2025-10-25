@@ -32,3 +32,5 @@ _**How to Use It**_
 * _Execute trades on recommended currency pairs using the suggested entry, stop-loss, and take-profit levels._
 * _Adjust position size according to **confidence levels** (reduce size if confidence <70%)._
 * _Monitor live updates for trend reversals or momentum changes._
+
+_`!forex EURUSD`_

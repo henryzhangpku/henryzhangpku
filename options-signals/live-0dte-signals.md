@@ -13,3 +13,6 @@ Same-day option trades are designed for quick in-and-out moves, with real-time a
 * **SPY = stock version of the index**
 * **SPX = the index itself**
 * **The important thing is:** _SPX options are about 10× bigger than SPY, so they’re better if you have a larger account or higher risk appetite._
+
+_`!0dte SPY`_
+

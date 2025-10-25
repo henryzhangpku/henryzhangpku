@@ -13,3 +13,5 @@ Real-time signals for trading individual stocks across the market**Live Stocks S
   * Risk management tips for **position sizing** and **stop-loss levels** to protect capital.
 
 _**Why It Matters:**_ Instead of chasing short-term noise, these signals are designed to help you stay invested in stocks that can deliver **steady returns and compound growth**.
+
+_`!stocks NVDA`_

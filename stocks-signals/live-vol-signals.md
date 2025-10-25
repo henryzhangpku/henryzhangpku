@@ -23,3 +23,5 @@ VOLATILITY ANALYSIS and TRADING RECOMMENDATIONS**The # live-vol-signals channel 
 
 * Position for volatility spike using options or VIX ETNs.
 * Keep the timeframe short-term; monitor news and realized volatility closely.
+
+_`!vol NVDA`_

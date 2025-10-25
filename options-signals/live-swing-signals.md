@@ -1,8 +1,6 @@
 # 🔄live-swing-signals
 
-\
-🔄live-swing-signals
---------------------
+## 🔄live-swing-signals
 
 _**🔄 Live-Swing-Signals(2-3 weeks holding)**_&#x20;
 
@@ -31,3 +29,5 @@ _Prefer less screen time but still want active opportunities._
 _Like balancing quick wins with trades that have room to run._
 
 _Want to grow your account steadily while controlling risk_
+
+_`!swing NVDA`_

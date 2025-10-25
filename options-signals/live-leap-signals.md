@@ -23,3 +23,5 @@ _**Perfect for traders who believe in a long-term directional move but want more
 _**Requires less monitoring compared to day/swing trades.**_
 
 _**Let you control risk while potentially multiplying returns on big trends.**_
+
+_`!leap NVDA`_

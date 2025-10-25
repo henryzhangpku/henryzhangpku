@@ -26,3 +26,5 @@ _**How to Use It?**_
 * <sup>_Identify_</sup><sup>_&#x20;_</sup><sup>_**contrarian trading opportunities**_</sup><sup>_&#x20;_</sup><sup>_against retail euphoria or panic._</sup>
 * <sup>_Time trades for_</sup><sup>_&#x20;_</sup><sup>_**momentum reversals or overextended price moves**_</sup><sup>_._</sup>
 * <sup>_Use confidence scores and stop-loss levels to manage risk._</sup>
+
+_`!wsb`_

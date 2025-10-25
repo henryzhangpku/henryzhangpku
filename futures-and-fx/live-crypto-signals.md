@@ -9,3 +9,5 @@ _**Holding Period:**_ Short- to medium-term, typically from a few hours up to se
 _**Why it matters:**&#x43;rypto markets are highly volatile. Real-time signals allow traders to react quickly to price swings, market trends, and emerging opportunities. Our signals are generated using a combination of technical analysis, market momentum, and trend tracking to give you an edge._
 
 _**Extras:**_ _1. Curated watchlist of trending coins and high-probability trades 2. Risk management tips for volatile markets 3. Clear, real-time updates so you never miss critical moves_
+
+_`!crypto BTC`_

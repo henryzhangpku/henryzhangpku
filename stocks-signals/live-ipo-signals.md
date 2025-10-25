@@ -13,3 +13,5 @@ _A **QuantSignals IPO signal** is an AI-assisted evaluation of a new stock offer
 * _News sentiment and analyst projections_
 
 _It’s **not a trade execution**, but a **decision-making aid** for whether to participate in the IPO._
+
+_`!ipo BLSH`_
