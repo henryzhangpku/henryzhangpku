@@ -1,27 +1,28 @@
-### 👋 Hi, I'm Henry Zhang
+### 🏆 QuantSignals — Leveraging AI for Alpha
 
-**Quant Developer | Founder @ QuantSignals | 10+ Years Institutional Quant**
-
-Building autonomous trading systems with Multi-Agent AI. My goal is to leverage the best technology to generate the best possible alpha.
+My goal is to leverage the best technology to generate the best possible alpha return.
 
 ---
 
-### 🛠️ Tools & Products
+### 🚀 Featured Projects
 
-| Product | Price | Description |
-|---------|:-----:|-------------|
-| [📊 Weekend Alpha Report](https://henryzhangdigital.gumroad.com/l/cnlyp) | $67 | Weekly trading signal pipeline & strategy |
-| [🔧 Universal Data Extractor Pro](https://henryzhangdigital.gumroad.com/l/autokit) | $29 | Scrape any website → CSV/JSON/Excel |
-| [🤖 AI Business Automation Toolkit](https://henryzhangdigital.gumroad.com/l/aexyla) | $49 | Automate 20+ hrs/week of repetitive work |
-| [⚡ SaaS Kit Pro](https://henryzhangdigital.gumroad.com/l/saas-kit-pro) | $199 | Next.js + Stripe + AI — launch in days |
-| [🕷️ Web Scraper Pro](https://henryzhangdigital.gumroad.com/l/qmuur) | $150 | Enterprise web data extraction |
-| [🔌 ExtractAPI](https://henryzhangdigital.gumroad.com/l/extractapi-starter) | $75 | Universal web data extraction API |
-| [📈 QS Premium Signals](https://henryzhangdigital.gumroad.com/l/qs-premium) | $49/mo | Real-time quant trading signals |
+| Project | Description | Links |
+|---------|-------------|-------|
+| 🤖 **AI Trading MCP Server** | Give Claude/GPT/Cursor real-time crypto intelligence — 6 trading tools | [GitHub](https://github.com/henryzhangpku/trading-mcp-server) • [Buy $97](https://henryzhangdigital.gumroad.com/) |
+| 📄 **Weekend Alpha Report** | AI-generated crypto + prediction market research, updated weekly | [GitHub](https://github.com/henryzhangpku/weekend-alpha-report) • [Buy $67](https://henryzhangdigital.gumroad.com/l/cnlyp) |
+| 🔍 **Polymarket Insider Tracker** | Detect informed money before the market moves | [GitHub](https://github.com/henryzhangpku/polymarket-insider-tracker) |
+| 🧠 **MiroFish** | AI trading agent framework | [GitHub](https://github.com/henryzhangpku/MiroFish) |
 
-### 📺 YouTube
-[QuantDevXYZ](https://www.youtube.com/@QuantDevXYZ) — 48K+ subscribers learning algorithmic trading and quantitative finance.
+---
 
-### 🔗 Links
-- **Website:** [officialhenryzhang.com](https://www.officialhenryzhang.com/)
-- **Store:** [henryzhangdigital.gumroad.com](https://henryzhangdigital.gumroad.com/)
-- **Twitter/X:** [@henryzhang999](https://x.com/henryzhang999)
+### 📊 Current Focus
+- Building AI agents that generate consistent alpha
+- Prediction market arbitrage and edge detection
+- MCP ecosystem — connecting LLMs to live financial data
+- Quantitative strategies for crypto, options, and forex
+
+---
+
+**Q:** https://quantsignals.xyz
+**P:** polymarket.com/@henryzhang999
+**R:** reddit.com/r/HenryZhang
