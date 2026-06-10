@@ -2,6 +2,9 @@
 
 My goal is to leverage the best technology to generate the best possible alpha return.
 
+[![Telegram](https://img.shields.io/badge/📡_QuantSignals_Channel-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/quantsignalsxyz)
+
+
 ---
 
 ### 🚀 Featured Projects
