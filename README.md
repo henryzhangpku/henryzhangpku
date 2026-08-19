@@ -1,8 +1,8 @@
 ## Henry Zhang
 
 Quantitative engineer. Fifteen years building the production systems behind systematic
-investing — data platforms, research platforms, and live trading pipelines — at
-**BlackRock**, **PIMCO**, and **TCW**.
+investing — data platforms, research platforms, and live trading pipelines. Eight years at
+**BlackRock**, then **PIMCO**, and currently at a global asset manager in Los Angeles.
 
 Three times over, the same problem: closing the gap between quant research and production,
 so researchers can ship models without an engineering bottleneck in the way.
@@ -40,7 +40,7 @@ The loop: `Ask → Compile → Propose → Admit → Evaluate → Verdict → Le
 
 | | |
 |---|---|
-| **TCW** | Lead Quantitative Engineer, VP — research platform, systematic insurance solutions |
+| **Global asset manager** | Lead Quantitative Engineer, VP — research platform (2025 – present) |
 | **PIMCO** | Quantitative Developer / Architect, VP — systematic futures & FX trading |
 | **BlackRock** | Quantitative Developer, VP — systematic equity signals, 8 years |
 | **Morgan Stanley** | Commodities Developer — trading systems, Shanghai / Singapore |
