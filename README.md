@@ -1,32 +1,52 @@
-### 🏆 QuantSignals — Leveraging AI for Alpha
+## Henry Zhang
 
-My goal is to leverage the best technology to generate the best possible alpha return.
+Quantitative engineer. Fifteen years building the production systems behind systematic
+investing — data platforms, research platforms, and live trading pipelines — at
+**BlackRock**, **PIMCO**, and **TCW**.
 
-[![Telegram](https://img.shields.io/badge/📡_QuantSignals_Channel-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/quantsignalsxyz)
-[![Discord](https://img.shields.io/badge/💬_QuantSignals_Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/quantsignals)
+Three times over, the same problem: closing the gap between quant research and production,
+so researchers can ship models without an engineering bottleneck in the way.
 
-
----
-
-### 🚀 Featured Projects
-
-| Project | Description | Links |
-|---------|-------------|-------|
-| 🤖 **AI Trading MCP Server** | Give Claude/GPT/Cursor real-time crypto intelligence — 6 trading tools | [GitHub](https://github.com/henryzhangpku/trading-mcp-server) • [Buy $97](https://henryzhangdigital.gumroad.com/) |
-| 📄 **Weekend Alpha Report** | AI-generated crypto + prediction market research, updated weekly | [GitHub](https://github.com/henryzhangpku/weekend-alpha-report) • [Buy $67](https://henryzhangdigital.gumroad.com/l/cnlyp) |
-| 🔍 **Polymarket Insider Tracker** | Detect informed money before the market moves | [GitHub](https://github.com/henryzhangpku/polymarket-insider-tracker) |
-| 🧠 **MiroFish** | AI trading agent framework | [GitHub](https://github.com/henryzhangpku/MiroFish) |
+Lately I've been interested in how far that idea goes when you remove the human from the
+loop entirely.
 
 ---
 
-### 📊 Current Focus
-- Building AI agents that generate consistent alpha
-- Prediction market arbitrage and edge detection
-- MCP ecosystem — connecting LLMs to live financial data
-- Quantitative strategies for crypto, options, and forex
+### Autonomous Quant Researcher
+
+An agent-driven research system that generates hypotheses, runs experiments, applies
+validation gates, and records verdicts — continuously, without manual prompting.
+386 research sessions to date, with every trial including the refutations kept on a
+permanent ledger.
+
+The loop: `Ask → Compile → Propose → Admit → Evaluate → Verdict → Learn`
+
+**[→ Architecture and research discipline](https://github.com/henryzhangpku/autonomous-quant-researcher)**
 
 ---
 
-**Q:** https://quantsignals.xyz
-**P:** polymarket.com/@henryzhang999
-**R:** reddit.com/r/HenryZhang
+### Selected repositories
+
+| | |
+|---|---|
+| **[autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)** | Agent-driven research loop — gates, immutable evaluators, and a ledger that records failures |
+| **[QuantDev](https://github.com/henryzhangpku/QuantDev)** | Working code from the [QuantDev](https://www.youtube.com/@QuantDevXYZ) channel — quant research notebooks |
+| **[options-flow-mcp-server](https://github.com/henryzhangpku/options-flow-mcp-server)** | Institutional options flow data for LLM agents over MCP |
+| **[trading-mcp-server](https://github.com/henryzhangpku/trading-mcp-server)** | Real-time market data exposed to Claude, GPT, and Cursor via MCP |
+
+---
+
+### Background
+
+| | |
+|---|---|
+| **TCW** | Lead Quantitative Engineer, VP — research platform, systematic insurance solutions |
+| **PIMCO** | Quantitative Developer / Architect, VP — systematic futures & FX trading |
+| **BlackRock** | Quantitative Developer, VP — systematic equity signals, 8 years |
+| **Morgan Stanley** | Commodities Developer — trading systems, Shanghai / Singapore |
+
+MS Software Engineering, Peking University · BS Computer Science, Nankai University
+
+---
+
+[LinkedIn](https://www.linkedin.com/in/henryzhang99/) · [officialhenryzhang.com](https://www.officialhenryzhang.com/)
