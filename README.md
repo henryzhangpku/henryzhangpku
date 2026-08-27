@@ -25,14 +25,34 @@ The loop: `Ask → Compile → Propose → Admit → Evaluate → Verdict → Le
 
 ---
 
+### GPU Compute Price Benchmark
+
+A daily rental price index for GPU compute, built the way a settlement benchmark
+has to be built rather than the way a dashboard can be. Five indices over ~20
+clouds, from live public pricing.
+
+The engineering is the easy half. The hard half is deciding what an "H100-hour"
+even is when a PCIe card on Ethernet and an SXM card on an NVLink fabric differ
+threefold and are not substitutes — then defending that decision to a
+counterparty who lost money on the print.
+
+A three-tier waterfall, MAD-based outlier screening, per-provider weight caps,
+and publication gates that **withhold rather than guess**: two of the five
+indices decline to print on a typical day, and both refusals are correct.
+Storage is bitemporal and append-only, so *what did the tape say on the 25th,
+as known on the 26th?* stays answerable after any correction.
+
+**[→ Methodology, and what the data turned out to show](https://github.com/henryzhangpku/gpu-price-index)**
+
+---
+
 ### Selected repositories
 
 | | |
 |---|---|
 | **[autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)** | Agent-driven research loop — gates, immutable evaluators, and a ledger that records failures |
 | **[QuantDev](https://github.com/henryzhangpku/QuantDev)** | Working code from the [QuantDev](https://www.youtube.com/@QuantDevXYZ) channel — quant research notebooks |
-| **[options-flow-mcp-server](https://github.com/henryzhangpku/options-flow-mcp-server)** | Institutional options flow data for LLM agents over MCP |
-| **[trading-mcp-server](https://github.com/henryzhangpku/trading-mcp-server)** | Real-time market data exposed to Claude, GPT, and Cursor via MCP |
+| **[gpu-price-index](https://github.com/henryzhangpku/gpu-price-index)** | A GPU rental price benchmark built like a settlement index — waterfall, robust estimation, gates that withhold |
 
 ---
 
