@@ -7,21 +7,9 @@ investing — data platforms, research platforms, and live trading pipelines. Ei
 Three times over, the same problem: closing the gap between quant research and production,
 so researchers can ship models without an engineering bottleneck in the way.
 
-Lately I've been interested in how far that idea goes when you remove the human from the
-loop entirely.
-
----
-
-### Autonomous Quant Researcher
-
-An agent-driven research system that generates hypotheses, runs experiments, applies
-validation gates, and records verdicts — continuously, without manual prompting.
-386 research sessions to date, with every trial including the refutations kept on a
-permanent ledger.
-
-The loop: `Ask → Compile → Propose → Admit → Evaluate → Verdict → Learn`
-
-**[→ Architecture and research discipline](https://github.com/henryzhangpku/autonomous-quant-researcher)**
+Lately the same question, asked of a market rather than a team: what does it take to turn a
+pile of published prices into a number somebody could settle a contract against — and how do
+you know when the honest answer is that you cannot?
 
 ---
 
@@ -46,6 +34,51 @@ as known on the 26th?* stays answerable after any correction.
 
 ---
 
+### Token Price Index
+
+The same question asked of LLM inference, and a different answer: **most of this
+market cannot carry an index at all.** A frontier model has exactly one seller,
+so there is no second price to discover and an average of one company's list
+price is that company's list price wearing an index's name. Open weights are the
+opposite — the same weights served by many sellers competing on price — and that
+is the only place a token benchmark means anything.
+
+Collected daily from live per-seller pricing. Six contracts, and the refusals are
+the product: one withheld on dispersion, one refused by construction.
+
+Building it turned up something I did not expect. **Fifteen of twenty-seven
+sellers of the same weights quote an identical price**, so the median *is* that
+price, more than half the deviations from it are zero, and the median absolute
+deviation is zero — the dispersion gate reported perfect agreement on a market
+spanning six times. Qn fails identically, because more than a quarter of pairwise
+differences are also zero. The compute benchmark has no such problem: no two GPU
+providers quote alike, because rental prices are set independently while token
+prices are copied from a publisher's reference rate.
+
+Two indices, two scale estimators, and the justification is measured rather than
+stylistic.
+
+**[→ The findings, with the numbers](https://github.com/henryzhangpku/token-price-index/blob/main/docs/FINDINGS.md)**
+
+---
+
+### Autonomous Quant Researcher
+
+An agent-driven research system that generates hypotheses, runs experiments, applies
+validation gates, and records verdicts — continuously, without manual prompting.
+386 research sessions to date, with every trial including the refutations kept on a
+permanent ledger.
+
+The loop: `Ask → Compile → Propose → Admit → Evaluate → Verdict → Learn`
+
+The machinery industrialises falsification; a human still owns the hypothesis. Most of what
+comes back is a documented no, and the ledger keeps those too — a refutation nobody wrote
+down gets rediscovered, at cost, by the next person.
+
+**[→ Architecture and research discipline](https://github.com/henryzhangpku/autonomous-quant-researcher)**
+
+---
+
 ### Selected repositories
 
 | | |
@@ -53,6 +86,7 @@ as known on the 26th?* stays answerable after any correction.
 | **[autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)** | Agent-driven research loop — gates, immutable evaluators, and a ledger that records failures |
 | **[QuantDev](https://github.com/henryzhangpku/QuantDev)** | Working code from the [QuantDev](https://www.youtube.com/@QuantDevXYZ) channel — quant research notebooks |
 | **[gpu-price-index](https://github.com/henryzhangpku/gpu-price-index)** | A GPU rental price benchmark built like a settlement index — waterfall, robust estimation, gates that withhold |
+| **[token-price-index](https://github.com/henryzhangpku/token-price-index)** | A price benchmark for LLM inference, and the goods it refuses to index |
 
 ---
 
