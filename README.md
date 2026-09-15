@@ -62,7 +62,7 @@ stylistic.
 
 ---
 
-### Autonomous Quant Researcher
+### Autonomous research loop
 
 An agent-driven research system that generates hypotheses, runs experiments, applies
 validation gates, and records verdicts — continuously, without manual prompting.
@@ -75,7 +75,6 @@ The machinery industrialises falsification; a human still owns the hypothesis. M
 comes back is a documented no, and the ledger keeps those too — a refutation nobody wrote
 down gets rediscovered, at cost, by the next person.
 
-**[→ Architecture and research discipline](https://github.com/henryzhangpku/autonomous-quant-researcher)**
 
 ---
 
@@ -83,7 +82,6 @@ down gets rediscovered, at cost, by the next person.
 
 | | |
 |---|---|
-| **[autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)** | Agent-driven research loop — gates, immutable evaluators, and a ledger that records failures |
 | **[QuantDev](https://github.com/henryzhangpku/QuantDev)** | Working code from the [QuantDev](https://www.youtube.com/@QuantDevXYZ) channel — quant research notebooks |
 | **[gpu-price-index](https://github.com/henryzhangpku/gpu-price-index)** | A GPU rental price benchmark built like a settlement index — waterfall, robust estimation, gates that withhold |
 | **[token-price-index](https://github.com/henryzhangpku/token-price-index)** | A price benchmark for LLM inference, and the goods it refuses to index |
