@@ -62,19 +62,23 @@ stylistic.
 
 ---
 
-### Autonomous research loop
+### Autonomous Quant Researcher
 
-An agent-driven research system that generates hypotheses, runs experiments, applies
-validation gates, and records verdicts — continuously, without manual prompting.
-386 research sessions to date, with every trial including the refutations kept on a
-permanent ledger.
+An LLM proposes trading hypotheses; trusted code decides whether they are true.
+A bounded research loop that takes the fixed experiment contract from Karpathy's
+`autoresearch` and the loop-as-artifact discipline from Loop Engineering, then
+adds what finance forces on you: the model never writes code (declarative JSON
+hypotheses, trusted interpretation), three chronological stages with a one-use
+holdout, acceptance as a gate set rather than a metric, admission-time
+de-duplication, and a hash-chained ledger that keeps every refutation.
 
-The loop: `Ask → Compile → Propose → Admit → Evaluate → Verdict → Learn`
+Most of what comes back is a documented no, and the ledger keeps those too — a
+refutation nobody wrote down gets rediscovered, at cost, by the next person.
+**Now open source**: the runner, the declarative contract, fixed validators,
+the options backtest mechanics, ~50 preregistered experiments, 17 missions with
+their findings, and 329 tests that need neither network nor keys.
 
-The machinery industrialises falsification; a human still owns the hypothesis. Most of what
-comes back is a documented no, and the ledger keeps those too — a refutation nobody wrote
-down gets rediscovered, at cost, by the next person.
-
+**[→ github.com/henryzhangpku/autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)**
 
 ---
 
@@ -83,6 +87,7 @@ down gets rediscovered, at cost, by the next person.
 | | |
 |---|---|
 | **[QuantDev](https://github.com/henryzhangpku/QuantDev)** | Working code from the [QuantDev](https://www.youtube.com/@QuantDevXYZ) channel — quant research notebooks |
+| **[autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)** | An LLM proposes trading hypotheses, trusted code decides — staged holdouts, gate sets, and a hash-chained ledger of every refutation |
 | **[gpu-price-index](https://github.com/henryzhangpku/gpu-price-index)** | A GPU rental price benchmark built like a settlement index — waterfall, robust estimation, gates that withhold |
 | **[token-price-index](https://github.com/henryzhangpku/token-price-index)** | A price benchmark for LLM inference, and the goods it refuses to index |
 
