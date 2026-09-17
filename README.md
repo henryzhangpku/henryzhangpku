@@ -82,21 +82,21 @@ their findings, and 329 tests that need neither network nor keys.
 
 ---
 
-### asof — research to production, with no handover
+### research2prod — research to production, with no handover
 
 The other half of the problem. A researcher who can write working Python
 still has no idea what happens after "the backtest looks good" — and the
 usual answer is a quant developer rebuilding the signal from a notebook,
-followed by weeks of finding out why the two disagree. `asof` removes the
+followed by weeks of finding out why the two disagree. `research2prod` removes the
 conversion step entirely: the project template makes the research code
 already be production code. One decorator, an as-of view a signal cannot
 reach past, data contracts, a mechanical promotion gate (look-ahead,
 determinism, declaration, contract, backtest floors), an immutable
-certificate with a golden output, and `asof export` — a deployable bundle
+certificate with a golden output, and `research2prod export` — a deployable bundle
 with a runner, a Dockerfile and a schedule, generated without translating
 anything. Every command ends by naming the next one.
 
-**[→ github.com/henryzhangpku/asof](https://github.com/henryzhangpku/asof)**
+**[→ github.com/henryzhangpku/research2prod](https://github.com/henryzhangpku/research2prod)**
 
 ---
 
@@ -105,7 +105,7 @@ anything. Every command ends by naming the next one.
 | | |
 |---|---|
 | **[QuantDev](https://github.com/henryzhangpku/QuantDev)** | Working code from the [QuantDev](https://www.youtube.com/@QuantDevXYZ) channel — quant research notebooks |
-| **[asof](https://github.com/henryzhangpku/asof)** | Write the signal once; it is already production code — the guided bridge from quant research to a scheduled, audited job |
+| **[research2prod](https://github.com/henryzhangpku/research2prod)** | Write the signal once; it is already production code — the guided bridge from quant research to a scheduled, audited job |
 | **[autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)** | An LLM proposes trading hypotheses, trusted code decides — staged holdouts, gate sets, and a hash-chained ledger of every refutation |
 | **[gpu-price-index](https://github.com/henryzhangpku/gpu-price-index)** | A GPU rental price benchmark built like a settlement index — waterfall, robust estimation, gates that withhold |
 | **[token-price-index](https://github.com/henryzhangpku/token-price-index)** | A price benchmark for LLM inference, and the goods it refuses to index |
