@@ -100,10 +100,44 @@ anything. Every command ends by naming the next one.
 
 ---
 
+### jevelin — fast, low-cost real-time agents
+
+The indices and the research loop run on a daily clock. This one runs inside a
+phone call.
+
+A real-time voice agent makes a dozen small decisions on every turn — *is this
+person reading out a card number, do they want a human, is my draft reply safe
+to say* — and most stacks send each one to an LLM, which puts every decision in
+the latency budget and the token bill of every turn. `jevelin` is a working
+reference design for the other approach: take those decisions **off the
+critical path** and answer them with a System One classifier — typed,
+calibrated probabilities, no generated text, a few hundred milliseconds —
+running alongside the conversation instead of in front of it. Every turn is
+scheduled as a dependency graph, so time to first audio is simply its critical
+path.
+
+On the declared profile, p50 time to first audio falls from 1,656 ms to 626 ms,
+model cost per call from $0.041 to $0.003, and risky drafts spoken to the caller
+from 66 to **zero** — because the guard runs before the words are said and
+**fails closed** when the classifier is late. The domain lives in data: a pack
+is a JSON file, and a second pack turns the same code into a brokerage desk. The
+classifier is an interface, not a vendor — a hosted API or a local Apache-2.0
+engine, with the pack unchanged.
+
+The numbers are simulated from a latency and price profile, not measured on
+production traffic, and the README says so before it shows them. The finding
+that mattered: this is a router, not an agent. The small decisions are where
+the latency and the risk live; the LLM is the part that can wait.
+
+**[→ Browser demo, and the code](https://henryzhangpku.github.io/jevelin/)**
+
+---
+
 ### Selected repositories
 
 | | |
 |---|---|
+| **[jevelin](https://github.com/henryzhangpku/jevelin)** | Real-time agents with the small decisions off the critical path — a System One classifier beside the conversation, each turn a dependency graph, a guard that fails closed |
 | **[QuantDev](https://github.com/henryzhangpku/QuantDev)** | Working code from the [QuantDev](https://www.youtube.com/@QuantDevXYZ) channel — quant research notebooks |
 | **[research2prod](https://github.com/henryzhangpku/research2prod)** | Write the signal once; it is already production code — the guided bridge from quant research to a scheduled, audited job |
 | **[autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)** | An LLM proposes trading hypotheses, trusted code decides — staged holdouts, gate sets, and a hash-chained ledger of every refutation |
