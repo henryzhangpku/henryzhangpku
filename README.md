@@ -62,6 +62,29 @@ stylistic.
 
 ---
 
+### IPO Price Model
+
+The same question a third time, on the thinnest public record a listed
+company will ever have: the day before it trades. An offer price, a filed
+range, a deal size, an exchange, and what the last few listings did. From
+exactly that, a calibrated interval for the first close — gradient-boosted
+quantiles, then split-conformal calibration on a later window, so the
+coverage holds without a distributional assumption — and a reference the
+model has to beat: the offer price with the calibration window's empirical
+quantiles around it. A narrower interval at the same coverage, or the
+reference stands.
+
+Every feature is on a declared T-1 list and a leakage assertion refuses any
+other; the regime feature aggregates only listings that closed strictly before
+the decision date; splits are chronological or the run stops. And a
+publication gate with three declared reasons — no filed range, too few recent
+comparables, an interval wider than the evidence can carry — that withholds
+the number rather than print a midpoint, and reports what the refusals cost.
+
+**[→ github.com/henryzhangpku/ipo-price-model](https://github.com/henryzhangpku/ipo-price-model)**
+
+---
+
 ### Autonomous Quant Researcher
 
 An LLM proposes trading hypotheses; trusted code decides whether they are true.
@@ -141,6 +164,7 @@ the latency and the risk live; the LLM is the part that can wait.
 | **[QuantDev](https://github.com/henryzhangpku/QuantDev)** | Working code from the [QuantDev](https://www.youtube.com/@QuantDevXYZ) channel — quant research notebooks |
 | **[research2prod](https://github.com/henryzhangpku/research2prod)** | Write the signal once; it is already production code — the guided bridge from quant research to a scheduled, audited job |
 | **[autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)** | An LLM proposes trading hypotheses, trusted code decides — staged holdouts, gate sets, and a hash-chained ledger of every refutation |
+| **[ipo-price-model](https://github.com/henryzhangpku/ipo-price-model)** | Price a company the day before it trades — a conformal first-close interval from T-1 facts, and a gate that refuses to print when the evidence is thin |
 | **[gpu-price-index](https://github.com/henryzhangpku/gpu-price-index)** | A GPU rental price benchmark built like a settlement index — waterfall, robust estimation, gates that withhold |
 | **[token-price-index](https://github.com/henryzhangpku/token-price-index)** | A price benchmark for LLM inference, and the goods it refuses to index |
 
