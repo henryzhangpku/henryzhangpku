@@ -13,6 +13,28 @@ you know when the honest answer is that you cannot?
 
 ---
 
+### mft-engine: mid-frequency trading, reasoning signals gated by code
+
+A Rust engine for mid-frequency trading, where decisions are made on minute
+bars and positions last minutes to hours. The reasoning signals come from where
+markets now talk: live Kalshi strike ladders turned into an implied
+distribution, and public posts scored by a fast System One classifier, Jev, at
+about 120 ms a post. Code, not the model, decides.
+
+One event loop runs backtest and live paper alike, so research and production
+cannot disagree. Risk fails closed; replay is deterministic to the decision
+fingerprint; every idea tried goes on a hash-chained experiment ledger, kept or
+killed; and a test fails the build if an order path or a secret ever appears.
+The engine decides in about 2 microseconds.
+
+The honest result: both pre-registered strategies lose after costs on three
+and a half days of data. The reasoning gate loses less, mostly by trading less,
+which is too small a sample to call.
+
+**[→ Live demo, and the code](https://henryzhangpku.github.io/mft-engine/)**
+
+---
+
 ### GPU Compute Price Benchmark
 
 A daily rental price index for GPU compute, built the way a settlement benchmark
@@ -160,6 +182,7 @@ the latency and the risk live; the LLM is the part that can wait.
 
 | | |
 |---|---|
+| **[mft-engine](https://github.com/henryzhangpku/mft-engine)** | Mid-frequency trading in Rust: Kalshi probability ladders and Jev-scored posts as signals, code as the gate, one code path for backtest and live paper, an experiment ledger |
 | **[jevelin](https://github.com/henryzhangpku/jevelin)** | Real-time agents with the small decisions off the critical path — a System One classifier beside the conversation, each turn a dependency graph, a guard that fails closed |
 | **[QuantDev](https://github.com/henryzhangpku/QuantDev)** | Working code from the [QuantDev](https://www.youtube.com/@QuantDevXYZ) channel — quant research notebooks |
 | **[research2prod](https://github.com/henryzhangpku/research2prod)** | Write the signal once; it is already production code — the guided bridge from quant research to a scheduled, audited job |
