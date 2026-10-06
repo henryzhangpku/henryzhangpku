@@ -13,6 +13,22 @@ you know when the honest answer is that you cannot?
 
 ---
 
+### call-eval: post-call evaluation for voice agents
+
+Every call scored for satisfaction and sentiment, with the transcript lines
+behind each number. The model extracts typed facts with evidence; code turns
+them into scores, so every score is reproducible and explainable. Satisfaction
+and sentiment come from separate evidence, which surfaces the polite callers
+whose problem was never solved. Bad transcripts go to a human, scores are
+calibrated against surveys, and agreement is measured against the human
+ceiling on a sealed holdout read once. Jev extracts a call in about 290 ms, at
+roughly $4 per 20,000 calls. Ships its agent tooling too: guard hooks, a
+fresh-context reviewer, a decision log.
+
+**[→ Live demo, and the code](https://henryzhangpku.github.io/call-eval/)**
+
+---
+
 ### mft-engine: mid-frequency trading, reasoning signals gated by code
 
 A Rust engine for mid-frequency trading, where decisions are made on minute
@@ -27,9 +43,8 @@ fingerprint; every idea tried goes on a hash-chained experiment ledger, kept or
 killed; and a test fails the build if an order path or a secret ever appears.
 The engine decides in about 2 microseconds.
 
-The honest result: both pre-registered strategies lose after costs on three
-and a half days of data. The reasoning gate loses less, mostly by trading less,
-which is too small a sample to call.
+It reads 331 live perpetuals across five venues and where the top wallets are
+positioned. Results after costs are published as they came out.
 
 **[→ Live demo, and the code](https://henryzhangpku.github.io/mft-engine/)**
 
