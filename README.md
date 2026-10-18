@@ -200,12 +200,26 @@ the latency and the risk live; the LLM is the part that can wait.
 
 ### Two short books on selling options
 
-**[The Art of Options War · 期权兵法](https://github.com/henryzhangpku/art-of-options-war)** reads
-Sun Tzu's thirteen chapters against one trade, the defined-risk credit spread.
-**[The Options Underwriter · 期权承保](https://github.com/henryzhangpku/options-underwriter)**
-reads the same trade as running an insurance company: policy, price, reserves,
-claims, catastrophe. Both bilingual, both free. No forecasts, no signals, no
-performance claims.
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/henryzhangpku/art-of-options-war"><img src="https://raw.githubusercontent.com/henryzhangpku/art-of-options-war/main/cover.jpg" alt="The Art of Options War" width="160"></a>
+<br><br>
+<b><a href="https://github.com/henryzhangpku/art-of-options-war">The Art of Options War</a></b> · 期权兵法
+<br>
+Sun Tzu's thirteen chapters, read against one trade: the defined-risk credit spread.
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/henryzhangpku/options-underwriter"><img src="https://raw.githubusercontent.com/henryzhangpku/options-underwriter/main/cover.jpg" alt="The Options Underwriter" width="160"></a>
+<br><br>
+<b><a href="https://github.com/henryzhangpku/options-underwriter">The Options Underwriter</a></b> · 期权承保
+<br>
+The same trade, run as an insurance company: policy, price, reserves, claims, catastrophe.
+</td>
+</tr>
+</table>
+
+Both bilingual and free to read. No forecasts, no signals, no performance claims.
 
 ---
 
@@ -221,7 +235,6 @@ performance claims.
 | **[ipo-price-model](https://github.com/henryzhangpku/ipo-price-model)** | Price a company the day before it trades — a conformal first-close interval from T-1 facts, and a gate that refuses to print when the evidence is thin |
 | **[gpu-price-index](https://github.com/henryzhangpku/gpu-price-index)** | A GPU rental price benchmark built like a settlement index — waterfall, robust estimation, gates that withhold |
 | **[token-price-index](https://github.com/henryzhangpku/token-price-index)** | A price benchmark for LLM inference, and the goods it refuses to index |
-| **[call-eval](https://github.com/henryzhangpku/call-eval)** | Post-call evaluation for voice agents — the model extracts evidence, code scores, calibrated against surveys on a sealed holdout |
 | **[agent-starter](https://github.com/henryzhangpku/agent-starter)** | Run a coding agent like a new hire — a written working agreement, guardrails enforced by hooks, a fresh-context reviewer, a decision log; one-line install |
 
 ---
