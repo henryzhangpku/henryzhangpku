@@ -198,22 +198,6 @@ the latency and the risk live; the LLM is the part that can wait.
 
 ---
 
-### call-eval: post-call evaluation for voice agents (finished)
-
-Every call scored for satisfaction and sentiment, with the transcript lines
-behind each number. The model extracts typed facts with evidence; code turns
-them into scores, so every score is reproducible and explainable. Satisfaction
-and sentiment come from separate evidence, which surfaces the polite callers
-whose problem was never solved. Bad transcripts go to a human, scores are
-calibrated against surveys, and agreement is measured against the human
-ceiling on a sealed holdout read once. Jev extracts a call in about 290 ms, at
-roughly $4 per 20,000 calls. Ships its agent tooling too: guard hooks, a
-fresh-context reviewer, a decision log.
-
-**[→ Live demo, and the code](https://henryzhangpku.github.io/call-eval/)**
-
----
-
 ### Two short books on selling options
 
 **[The Art of Options War · 期权兵法](https://github.com/henryzhangpku/art-of-options-war)** reads
