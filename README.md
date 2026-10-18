@@ -13,19 +13,24 @@ you know when the honest answer is that you cannot?
 
 ---
 
-### call-eval: post-call evaluation for voice agents
+### equity-scout: a plain-English idea, screened and explained with citations
 
-Every call scored for satisfaction and sentiment, with the transcript lines
-behind each number. The model extracts typed facts with evidence; code turns
-them into scores, so every score is reproducible and explainable. Satisfaction
-and sentiment come from separate evidence, which surfaces the polite callers
-whose problem was never solved. Bad transcripts go to a human, scores are
-calibrated against surveys, and agreement is measured against the human
-ceiling on a sealed holdout read once. Jev extracts a call in about 290 ms, at
-roughly $4 per 20,000 calls. Ships its agent tooling too: guard hooks, a
-fresh-context reviewer, a decision log.
+Write an investment observation the way a trader would say it — *profitable
+mid-caps that have pulled back 20% from their highs but are still growing
+revenue* — and a model turns it into a typed screen spec. Code checks every
+field, operator and threshold against a whitelist and refuses the rest, then
+screens about 3,800 US-listed companies on point-in-time data and computes every
+number. For the top names the model reads the latest earnings release, the
+MD&A and the news, and explains why the stock and the fundamentals might
+disagree; code deletes any claim whose quote does not appear verbatim in its
+source.
 
-**[→ Live demo, and the code](https://henryzhangpku.github.io/call-eval/)**
+The same rule as everything else here: the model proposes, deterministic code
+decides. The browser demo re-runs the screen on a recorded snapshot with no
+key, and the learning loop's hypotheses are shown with their excess after
+costs, the corrected bar, and the decision.
+
+**[→ Live demo, and the code](https://henryzhangpku.github.io/equity-scout/)**
 
 ---
 
@@ -193,18 +198,47 @@ the latency and the risk live; the LLM is the part that can wait.
 
 ---
 
+### call-eval: post-call evaluation for voice agents (finished)
+
+Every call scored for satisfaction and sentiment, with the transcript lines
+behind each number. The model extracts typed facts with evidence; code turns
+them into scores, so every score is reproducible and explainable. Satisfaction
+and sentiment come from separate evidence, which surfaces the polite callers
+whose problem was never solved. Bad transcripts go to a human, scores are
+calibrated against surveys, and agreement is measured against the human
+ceiling on a sealed holdout read once. Jev extracts a call in about 290 ms, at
+roughly $4 per 20,000 calls. Ships its agent tooling too: guard hooks, a
+fresh-context reviewer, a decision log.
+
+**[→ Live demo, and the code](https://henryzhangpku.github.io/call-eval/)**
+
+---
+
+### Two short books on selling options
+
+**[The Art of Options War · 期权兵法](https://github.com/henryzhangpku/art-of-options-war)** reads
+Sun Tzu's thirteen chapters against one trade, the defined-risk credit spread.
+**[The Options Underwriter · 期权承保](https://github.com/henryzhangpku/options-underwriter)**
+reads the same trade as running an insurance company: policy, price, reserves,
+claims, catastrophe. Both bilingual, both free. No forecasts, no signals, no
+performance claims.
+
+---
+
 ### Selected repositories
 
 | | |
 |---|---|
+| **[equity-scout](https://github.com/henryzhangpku/equity-scout)** | A plain-English observation becomes a whitelisted screen over ~3,800 US equities, with explanations whose every quote is checked verbatim |
 | **[mft-engine](https://github.com/henryzhangpku/mft-engine)** | Mid-frequency trading in Rust: Kalshi probability ladders and Jev-scored posts as signals, code as the gate, one code path for backtest and live paper, an experiment ledger |
 | **[jevelin](https://github.com/henryzhangpku/jevelin)** | Real-time agents with the small decisions off the critical path — a System One classifier beside the conversation, each turn a dependency graph, a guard that fails closed |
-| **[QuantDev](https://github.com/henryzhangpku/QuantDev)** | Working code from the [QuantDev](https://www.youtube.com/@QuantDevXYZ) channel — quant research notebooks |
 | **[research2prod](https://github.com/henryzhangpku/research2prod)** | Write the signal once; it is already production code — the guided bridge from quant research to a scheduled, audited job |
 | **[autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)** | An LLM proposes trading hypotheses, trusted code decides — staged holdouts, gate sets, and a hash-chained ledger of every refutation |
 | **[ipo-price-model](https://github.com/henryzhangpku/ipo-price-model)** | Price a company the day before it trades — a conformal first-close interval from T-1 facts, and a gate that refuses to print when the evidence is thin |
 | **[gpu-price-index](https://github.com/henryzhangpku/gpu-price-index)** | A GPU rental price benchmark built like a settlement index — waterfall, robust estimation, gates that withhold |
 | **[token-price-index](https://github.com/henryzhangpku/token-price-index)** | A price benchmark for LLM inference, and the goods it refuses to index |
+| **[call-eval](https://github.com/henryzhangpku/call-eval)** | Post-call evaluation for voice agents — the model extracts evidence, code scores, calibrated against surveys on a sealed holdout |
+| **[agent-starter](https://github.com/henryzhangpku/agent-starter)** | Run a coding agent like a new hire — a written working agreement, guardrails enforced by hooks, a fresh-context reviewer, a decision log; one-line install |
 
 ---
 
