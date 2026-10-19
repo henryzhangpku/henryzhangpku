@@ -39,7 +39,7 @@ costs, the corrected bar, and the decision.
 A Rust engine for mid-frequency trading, where decisions are made on minute
 bars and positions last minutes to hours. The reasoning signals come from where
 markets now talk: live Kalshi strike ladders turned into an implied
-distribution, and public posts scored by a fast System One classifier, Jev, at
+distribution, and public posts scored by a fast System One classifier at
 about 120 ms a post. Code, not the model, decides.
 
 One event loop runs backtest and live paper alike, so research and production
@@ -228,7 +228,7 @@ Both bilingual and free to read. No forecasts, no signals, no performance claims
 | | |
 |---|---|
 | **[equity-scout](https://github.com/henryzhangpku/equity-scout)** | A plain-English observation becomes a whitelisted screen over ~3,800 US equities, with explanations whose every quote is checked verbatim |
-| **[mft-engine](https://github.com/henryzhangpku/mft-engine)** | Mid-frequency trading in Rust: Kalshi probability ladders and Jev-scored posts as signals, code as the gate, one code path for backtest and live paper, an experiment ledger |
+| **[mft-engine](https://github.com/henryzhangpku/mft-engine)** | Mid-frequency trading in Rust: Kalshi probability ladders and classifier-scored posts as signals, code as the gate, one code path for backtest and live paper, an experiment ledger |
 | **[jevelin](https://github.com/henryzhangpku/jevelin)** | Real-time agents with the small decisions off the critical path — a System One classifier beside the conversation, each turn a dependency graph, a guard that fails closed |
 | **[research2prod](https://github.com/henryzhangpku/research2prod)** | Write the signal once; it is already production code — the guided bridge from quant research to a scheduled, audited job |
 | **[autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)** | An LLM proposes trading hypotheses, trusted code decides — staged holdouts, gate sets, and a hash-chained ledger of every refutation |
