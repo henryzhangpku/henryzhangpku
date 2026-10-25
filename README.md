@@ -11,6 +11,12 @@ Lately the same question, asked of a market rather than a team: what does it tak
 pile of published prices into a number somebody could settle a contract against — and how do
 you know when the honest answer is that you cannot?
 
+**Start here**, each with a live page you can try in the browser:
+[equity-scout](https://henryzhangpku.github.io/equity-scout/) (a plain-English idea becomes a checked stock screen) ·
+[mft-engine](https://henryzhangpku.github.io/mft-engine/) (Rust trading engine, one code path for backtest and live) ·
+[jevelin](https://henryzhangpku.github.io/jevelin/) (real-time voice agents, small decisions off the critical path) ·
+[autonomous-quant-researcher](https://henryzhangpku.github.io/autonomous-quant-researcher/) (an LLM proposes, code decides)
+
 ### Beyond Python
 
 Python was home for fifteen years. AI-assisted coding now lets the same engineering discipline carry into whatever language the problem needs, above all high-performance ones like Rust and C++. Small, tested learning projects, each with its own live page:
