@@ -18,6 +18,7 @@ Python was home for fifteen years. AI-assisted coding now lets the same engineer
 | Language | Project | What it shows |
 |---|---|---|
 | **Rust** | [mft-engine](https://henryzhangpku.github.io/mft-engine/) | one event loop for backtest and live paper, deterministic replay, about 2 µs per decision |
+| **C++20** | [tickforge](https://henryzhangpku.github.io/tickforge/) | mmap columnar tick store, pmr arenas, lock-free SPSC pipeline, parallel parameter sweeps, pybind11, optional CUDA |
 | **Java 21** | [java-bidder](https://henryzhangpku.github.io/java-bidder/) | ad bidder under a hard deadline: lock-free budget slices, frequency caps, pacing, virtual threads |
 | **Ruby on Rails 8** | [rails-nl-screen](https://henryzhangpku.github.io/rails-nl-screen/) | plain-English stock screen with Hotwire; the model proposes conditions, validations decide |
 
