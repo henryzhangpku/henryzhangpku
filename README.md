@@ -11,6 +11,16 @@ Lately the same question, asked of a market rather than a team: what does it tak
 pile of published prices into a number somebody could settle a contract against — and how do
 you know when the honest answer is that you cannot?
 
+### Beyond Python
+
+Python is home, but the same discipline ships in whatever the problem needs. Small, tested learning projects, each with its own live page:
+
+| Language | Project | What it shows |
+|---|---|---|
+| **Rust** | [mft-engine](https://henryzhangpku.github.io/mft-engine/) | one event loop for backtest and live paper, deterministic replay, about 2 µs per decision |
+| **Java 21** | [java-bidder](https://henryzhangpku.github.io/java-bidder/) | ad bidder under a hard deadline: lock-free budget slices, frequency caps, pacing, virtual threads |
+| **Ruby on Rails 8** | [rails-nl-screen](https://henryzhangpku.github.io/rails-nl-screen/) | plain-English stock screen with Hotwire; the model proposes conditions, validations decide |
+
 ---
 
 ### equity-scout: a plain-English idea, screened and explained with citations
