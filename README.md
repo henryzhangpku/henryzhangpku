@@ -13,7 +13,7 @@ you know when the honest answer is that you cannot?
 
 ### Beyond Python
 
-Python is home, but the same discipline ships in whatever the problem needs. Small, tested learning projects, each with its own live page:
+Python was home for fifteen years. AI-assisted coding now lets the same engineering discipline carry into whatever language the problem needs. Small, tested learning projects, each with its own live page:
 
 | Language | Project | What it shows |
 |---|---|---|
