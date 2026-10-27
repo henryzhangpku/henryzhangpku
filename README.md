@@ -1,8 +1,11 @@
 ## Henry Zhang
 
-Quantitative engineer. Fifteen years building the production systems behind systematic
-investing — data platforms, research platforms, and live trading pipelines. Eight years at
-**BlackRock**, then **PIMCO**, and currently at a global asset manager in Los Angeles.
+I build trading platforms and then I run them. The engineering is the easy half; deciding
+what should exist, and what should never ship, is the job.
+
+Fifteen years building the production systems behind systematic investing — data platforms,
+research platforms, and live trading pipelines. Eight years at **BlackRock**, then **PIMCO**,
+and currently at a global asset manager in Los Angeles.
 
 Three times over, the same problem: closing the gap between quant research and production,
 so researchers can ship models without an engineering bottleneck in the way.
@@ -16,19 +19,6 @@ you know when the honest answer is that you cannot?
 [mft-engine](https://henryzhangpku.github.io/mft-engine/) (Rust trading engine, one code path for backtest and live) ·
 [jevelin](https://henryzhangpku.github.io/jevelin/) (real-time voice agents, small decisions off the critical path) ·
 [autonomous-quant-researcher](https://henryzhangpku.github.io/autonomous-quant-researcher/) (an LLM proposes, code decides)
-
-### Beyond Python
-
-Python was home for fifteen years. AI-assisted coding now lets the same engineering discipline carry into whatever language the problem needs, above all high-performance ones like Rust and C++. Small, tested learning projects, each with its own live page:
-
-| Language | Project | What it shows |
-|---|---|---|
-| **Rust** | [mft-engine](https://henryzhangpku.github.io/mft-engine/) | one event loop for backtest and live paper, deterministic replay, about 2 µs per decision |
-| **C++20** | [tickforge](https://henryzhangpku.github.io/tickforge/) | mmap columnar tick store, pmr arenas, lock-free SPSC pipeline, parallel parameter sweeps, pybind11, optional CUDA |
-| **Java 21** | [java-bidder](https://henryzhangpku.github.io/java-bidder/) | ad bidder under a hard deadline: lock-free budget slices, frequency caps, pacing, virtual threads |
-| **Ruby on Rails 8** | [rails-nl-screen](https://henryzhangpku.github.io/rails-nl-screen/) | plain-English stock screen with Hotwire; the model proposes conditions, validations decide |
-
----
 
 ### equity-scout: a plain-English idea, screened and explained with citations
 
@@ -237,6 +227,19 @@ The same trade, run as an insurance company: policy, price, reserves, claims, ca
 </table>
 
 Both bilingual and free to read. No forecasts, no signals, no performance claims.
+
+---
+
+### Beyond Python
+
+Python was home for fifteen years. AI-assisted coding now lets the same engineering discipline carry into whatever language the problem needs, above all the high-performance ones. Each has a live page you can run:
+
+| Language | Project | What it shows |
+|---|---|---|
+| **Rust** | [mft-engine](https://henryzhangpku.github.io/mft-engine/) | one event loop for backtest and live paper, deterministic replay, about 2 µs per decision |
+| **C++20** | [tickforge](https://henryzhangpku.github.io/tickforge/) | mmap columnar tick store, pmr arenas, lock-free SPSC pipeline, parallel parameter sweeps, pybind11, optional CUDA |
+| **Java 21** | [java-bidder](https://henryzhangpku.github.io/java-bidder/) | ad bidder under a hard deadline: lock-free budget slices, frequency caps, pacing, virtual threads |
+| **Ruby on Rails 8** | [rails-nl-screen](https://henryzhangpku.github.io/rails-nl-screen/) | plain-English stock screen with Hotwire; the model proposes conditions, validations decide |
 
 ---
 
