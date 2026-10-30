@@ -13,14 +13,53 @@ so researchers can ship models without an engineering bottleneck in the way.
 The trading side is the point: one code path from backtest to live, risk that fails closed, and
 research that is allowed to say "no edge" before money finds out.
 
-**Start here**, each with a live page you can try in the browser:
-[equity-scout](https://henryzhangpku.github.io/equity-scout/) (a plain-English idea becomes a checked stock screen) ·
-[mft-engine](https://henryzhangpku.github.io/mft-engine/) (Rust trading engine, one code path for backtest and live) ·
-[autonomous-quant-researcher](https://henryzhangpku.github.io/autonomous-quant-researcher/) (an LLM proposes, code decides)
+**Start here**: three projects, each solving a different problem, each with a live page or code you can try:
+[autonomous-quant-researcher](https://henryzhangpku.github.io/autonomous-quant-researcher/) (deciding what is true: an LLM proposes, code decides) ·
+[research2prod](https://github.com/henryzhangpku/research2prod) (shipping it: research code that is already production code) ·
+[mft-engine](https://henryzhangpku.github.io/mft-engine/) (running it: one Rust code path for backtest and live)
+
+### Autonomous Quant Researcher
+
+An LLM proposes trading hypotheses; trusted code decides whether they are true.
+My own idea: an autonomous quant researcher, a bounded research loop that
+borrows the fixed experiment contract of Karpathy's `autoresearch` and the
+loop-as-artifact discipline of Loop Engineering, then adds what finance forces
+on you: the model never writes code (declarative JSON
+hypotheses, trusted interpretation), three chronological stages with a one-use
+holdout, acceptance as a gate set rather than a metric, admission-time
+de-duplication, and a hash-chained ledger that keeps every refutation.
+
+Most of what comes back is a documented no, and the ledger keeps those too — a
+refutation nobody wrote down gets rediscovered, at cost, by the next person.
+**Now open source**: the runner, the declarative contract, fixed validators,
+the options backtest mechanics, ~50 preregistered experiments, 20 missions with
+their findings, and 523 tests that need neither network nor keys.
+
+**[→ github.com/henryzhangpku/autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)**
+
+---
+
+### research2prod — research to production, with no handover
+
+The guided self-service model from my PIMCO work, rebuilt in the open. A researcher who can write working Python
+still has no idea what happens after "the backtest looks good" — and the
+usual answer is a quant developer rebuilding the signal from a notebook,
+followed by weeks of finding out why the two disagree. `research2prod` removes the
+conversion step entirely: the project template makes the research code
+already be production code. One decorator, an as-of view a signal cannot
+reach past, data contracts, a mechanical promotion gate (look-ahead,
+determinism, declaration, contract, backtest floors), an immutable
+certificate with a golden output, and `research2prod export` — a deployable bundle
+with a runner, a Dockerfile and a schedule, generated without translating
+anything. Every command ends by naming the next one.
+
+**[→ github.com/henryzhangpku/research2prod](https://github.com/henryzhangpku/research2prod)**
+
+---
 
 ### mft-engine: mid-frequency trading, reasoning signals gated by code
 
-A Rust engine for mid-frequency trading, where decisions are made on minute
+The systematic-trading discipline from my PIMCO work, on a modern Rust stack: an engine for mid-frequency trading, where decisions are made on minute
 bars and positions last minutes to hours. The reasoning signals come from where
 markets now talk: live Kalshi strike ladders turned into an implied
 distribution, and public posts scored by a fast System One classifier at
@@ -36,65 +75,6 @@ It reads 331 live perpetuals across five venues and where the top wallets are
 positioned. Results after costs are published as they came out.
 
 **[→ Live demo, and the code](https://henryzhangpku.github.io/mft-engine/)**
-
----
-
-### equity-scout: a plain-English idea, screened and explained with citations
-
-Write an investment observation the way a trader would say it — *profitable
-mid-caps that have pulled back 20% from their highs but are still growing
-revenue* — and a model turns it into a typed screen spec. Code checks every
-field, operator and threshold against a whitelist and refuses the rest, then
-screens about 3,800 US-listed companies on point-in-time data and computes every
-number. For the top names the model reads the latest earnings release, the
-MD&A and the news, and explains why the stock and the fundamentals might
-disagree; code deletes any claim whose quote does not appear verbatim in its
-source.
-
-The same rule as everything else here: the model proposes, deterministic code
-decides. The browser demo re-runs the screen on a recorded snapshot with no
-key, and the learning loop's hypotheses are shown with their excess after
-costs, the corrected bar, and the decision.
-
-**[→ Live demo, and the code](https://henryzhangpku.github.io/equity-scout/)**
-
----
-
-### Autonomous Quant Researcher
-
-An LLM proposes trading hypotheses; trusted code decides whether they are true.
-A bounded research loop that takes the fixed experiment contract from Karpathy's
-`autoresearch` and the loop-as-artifact discipline from Loop Engineering, then
-adds what finance forces on you: the model never writes code (declarative JSON
-hypotheses, trusted interpretation), three chronological stages with a one-use
-holdout, acceptance as a gate set rather than a metric, admission-time
-de-duplication, and a hash-chained ledger that keeps every refutation.
-
-Most of what comes back is a documented no, and the ledger keeps those too — a
-refutation nobody wrote down gets rediscovered, at cost, by the next person.
-**Now open source**: the runner, the declarative contract, fixed validators,
-the options backtest mechanics, ~50 preregistered experiments, 17 missions with
-their findings, and 329 tests that need neither network nor keys.
-
-**[→ github.com/henryzhangpku/autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)**
-
----
-
-### research2prod — research to production, with no handover
-
-The other half of the problem. A researcher who can write working Python
-still has no idea what happens after "the backtest looks good" — and the
-usual answer is a quant developer rebuilding the signal from a notebook,
-followed by weeks of finding out why the two disagree. `research2prod` removes the
-conversion step entirely: the project template makes the research code
-already be production code. One decorator, an as-of view a signal cannot
-reach past, data contracts, a mechanical promotion gate (look-ahead,
-determinism, declaration, contract, backtest floors), an immutable
-certificate with a golden output, and `research2prod export` — a deployable bundle
-with a runner, a Dockerfile and a schedule, generated without translating
-anything. Every command ends by naming the next one.
-
-**[→ github.com/henryzhangpku/research2prod](https://github.com/henryzhangpku/research2prod)**
 
 ---
 
@@ -140,10 +120,9 @@ For reference, the same discipline outside Python, each with a live page: [tickf
 
 | | |
 |---|---|
-| **[mft-engine](https://github.com/henryzhangpku/mft-engine)** | Mid-frequency trading in Rust: Kalshi probability ladders and classifier-scored posts as signals, code as the gate, one code path for backtest and live paper, an experiment ledger |
-| **[research2prod](https://github.com/henryzhangpku/research2prod)** | Write the signal once; it is already production code — the guided bridge from quant research to a scheduled, audited job |
 | **[autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)** | An LLM proposes trading hypotheses, trusted code decides — staged holdouts, gate sets, and a hash-chained ledger of every refutation |
-| **[equity-scout](https://github.com/henryzhangpku/equity-scout)** | A plain-English observation becomes a whitelisted screen over ~3,800 US equities, with explanations whose every quote is checked verbatim |
+| **[research2prod](https://github.com/henryzhangpku/research2prod)** | Write the signal once; it is already production code — the guided bridge from quant research to a scheduled, audited job |
+| **[mft-engine](https://github.com/henryzhangpku/mft-engine)** | Mid-frequency trading in Rust: Kalshi probability ladders and classifier-scored posts as signals, code as the gate, one code path for backtest and live paper, an experiment ledger |
 
 Everything else is on [the repositories tab](https://github.com/henryzhangpku?tab=repositories).
 
