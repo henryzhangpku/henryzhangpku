@@ -98,41 +98,41 @@ anything. Every command ends by naming the next one.
 
 ---
 
-### Two short books on selling options
+### Three short books on options
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 <a href="https://github.com/henryzhangpku/art-of-options-war"><img src="https://raw.githubusercontent.com/henryzhangpku/art-of-options-war/main/cover.jpg" alt="The Art of Options War" width="160"></a>
 <br><br>
 <b><a href="https://github.com/henryzhangpku/art-of-options-war">The Art of Options War</a></b> · 期权兵法
 <br>
 Sun Tzu's thirteen chapters, read against one trade: the defined-risk credit spread.
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 <a href="https://github.com/henryzhangpku/options-underwriter"><img src="https://raw.githubusercontent.com/henryzhangpku/options-underwriter/main/cover.jpg" alt="The Options Underwriter" width="160"></a>
 <br><br>
 <b><a href="https://github.com/henryzhangpku/options-underwriter">The Options Underwriter</a></b> · 期权承保
 <br>
 The same trade, run as an insurance company: policy, price, reserves, claims, catastrophe.
 </td>
+<td width="33%" valign="top">
+<a href="https://github.com/henryzhangpku/the-counted-trade"><img src="https://raw.githubusercontent.com/henryzhangpku/the-counted-trade/main/cover.jpg" alt="The Counted Trade" width="160"></a>
+<br><br>
+<b><a href="https://github.com/henryzhangpku/the-counted-trade">The Counted Trade</a></b> · 算而后战
+<br>
+The buyer's book: the Thirty-Six Stratagems, read for the buyer of asymmetric options.
+</td>
 </tr>
 </table>
 
-Both bilingual and free to read. No forecasts, no signals, no performance claims.
+All three bilingual and free to read. No forecasts, no signals, no performance claims.
 
 ---
 
-### Beyond Python
+### Other languages
 
-Python was home for fifteen years. AI-assisted coding now lets the same engineering discipline carry into whatever language the problem needs, above all the high-performance ones. Each has a live page you can run:
-
-| Language | Project | What it shows |
-|---|---|---|
-| **Rust** | [mft-engine](https://henryzhangpku.github.io/mft-engine/) | one event loop for backtest and live paper, deterministic replay, about 2 µs per decision |
-| **C++20** | [tickforge](https://henryzhangpku.github.io/tickforge/) | mmap columnar tick store, pmr arenas, lock-free SPSC pipeline, parallel parameter sweeps, pybind11, optional CUDA |
-| **Java 21** | [java-bidder](https://henryzhangpku.github.io/java-bidder/) | ad bidder under a hard deadline: lock-free budget slices, frequency caps, pacing, virtual threads |
-| **Ruby on Rails 8** | [rails-nl-screen](https://henryzhangpku.github.io/rails-nl-screen/) | plain-English stock screen with Hotwire; the model proposes conditions, validations decide |
+For reference, the same discipline outside Python, each with a live page: [tickforge](https://henryzhangpku.github.io/tickforge/) (C++20 tick store and parameter sweeps) · [java-bidder](https://henryzhangpku.github.io/java-bidder/) (Java 21, hard-deadline bidder) · [rails-nl-screen](https://henryzhangpku.github.io/rails-nl-screen/) (Rails 8 plain-English screen).
 
 ---
 
@@ -140,15 +140,12 @@ Python was home for fifteen years. AI-assisted coding now lets the same engineer
 
 | | |
 |---|---|
-| **[equity-scout](https://github.com/henryzhangpku/equity-scout)** | A plain-English observation becomes a whitelisted screen over ~3,800 US equities, with explanations whose every quote is checked verbatim |
 | **[mft-engine](https://github.com/henryzhangpku/mft-engine)** | Mid-frequency trading in Rust: Kalshi probability ladders and classifier-scored posts as signals, code as the gate, one code path for backtest and live paper, an experiment ledger |
-| **[jevelin](https://github.com/henryzhangpku/jevelin)** | Real-time agents with the small decisions off the critical path — a System One classifier beside the conversation, each turn a dependency graph, a guard that fails closed |
 | **[research2prod](https://github.com/henryzhangpku/research2prod)** | Write the signal once; it is already production code — the guided bridge from quant research to a scheduled, audited job |
 | **[autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)** | An LLM proposes trading hypotheses, trusted code decides — staged holdouts, gate sets, and a hash-chained ledger of every refutation |
-| **[ipo-price-model](https://github.com/henryzhangpku/ipo-price-model)** | Price a company the day before it trades — a conformal first-close interval from T-1 facts, and a gate that refuses to print when the evidence is thin |
-| **[gpu-price-index](https://github.com/henryzhangpku/gpu-price-index)** | A GPU rental price benchmark built like a settlement index — waterfall, robust estimation, gates that withhold |
-| **[token-price-index](https://github.com/henryzhangpku/token-price-index)** | A price benchmark for LLM inference, and the goods it refuses to index |
-| **[agent-starter](https://github.com/henryzhangpku/agent-starter)** | Run a coding agent like a new hire — a written working agreement, guardrails enforced by hooks, a fresh-context reviewer, a decision log; one-line install |
+| **[equity-scout](https://github.com/henryzhangpku/equity-scout)** | A plain-English observation becomes a whitelisted screen over ~3,800 US equities, with explanations whose every quote is checked verbatim |
+
+Everything else is on [the repositories tab](https://github.com/henryzhangpku?tab=repositories).
 
 ---
 
