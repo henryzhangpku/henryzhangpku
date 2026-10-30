@@ -10,36 +10,13 @@ and currently at a global asset manager in Los Angeles.
 Three times over, the same problem: closing the gap between quant research and production,
 so researchers can ship models without an engineering bottleneck in the way.
 
-Lately the same question, asked of a market rather than a team: what does it take to turn a
-pile of published prices into a number somebody could settle a contract against — and how do
-you know when the honest answer is that you cannot?
+The trading side is the point: one code path from backtest to live, risk that fails closed, and
+research that is allowed to say "no edge" before money finds out.
 
 **Start here**, each with a live page you can try in the browser:
 [equity-scout](https://henryzhangpku.github.io/equity-scout/) (a plain-English idea becomes a checked stock screen) ·
 [mft-engine](https://henryzhangpku.github.io/mft-engine/) (Rust trading engine, one code path for backtest and live) ·
-[jevelin](https://henryzhangpku.github.io/jevelin/) (real-time voice agents, small decisions off the critical path) ·
 [autonomous-quant-researcher](https://henryzhangpku.github.io/autonomous-quant-researcher/) (an LLM proposes, code decides)
-
-### equity-scout: a plain-English idea, screened and explained with citations
-
-Write an investment observation the way a trader would say it — *profitable
-mid-caps that have pulled back 20% from their highs but are still growing
-revenue* — and a model turns it into a typed screen spec. Code checks every
-field, operator and threshold against a whitelist and refuses the rest, then
-screens about 3,800 US-listed companies on point-in-time data and computes every
-number. For the top names the model reads the latest earnings release, the
-MD&A and the news, and explains why the stock and the fundamentals might
-disagree; code deletes any claim whose quote does not appear verbatim in its
-source.
-
-The same rule as everything else here: the model proposes, deterministic code
-decides. The browser demo re-runs the screen on a recorded snapshot with no
-key, and the learning loop's hypotheses are shown with their excess after
-costs, the corrected bar, and the decision.
-
-**[→ Live demo, and the code](https://henryzhangpku.github.io/equity-scout/)**
-
----
 
 ### mft-engine: mid-frequency trading, reasoning signals gated by code
 
@@ -62,75 +39,24 @@ positioned. Results after costs are published as they came out.
 
 ---
 
-### GPU Compute Price Benchmark
+### equity-scout: a plain-English idea, screened and explained with citations
 
-A daily rental price index for GPU compute, built the way a settlement benchmark
-has to be built rather than the way a dashboard can be. Five indices over ~20
-clouds, from live public pricing.
+Write an investment observation the way a trader would say it — *profitable
+mid-caps that have pulled back 20% from their highs but are still growing
+revenue* — and a model turns it into a typed screen spec. Code checks every
+field, operator and threshold against a whitelist and refuses the rest, then
+screens about 3,800 US-listed companies on point-in-time data and computes every
+number. For the top names the model reads the latest earnings release, the
+MD&A and the news, and explains why the stock and the fundamentals might
+disagree; code deletes any claim whose quote does not appear verbatim in its
+source.
 
-The engineering is the easy half. The hard half is deciding what an "H100-hour"
-even is when a PCIe card on Ethernet and an SXM card on an NVLink fabric differ
-threefold and are not substitutes — then defending that decision to a
-counterparty who lost money on the print.
+The same rule as everything else here: the model proposes, deterministic code
+decides. The browser demo re-runs the screen on a recorded snapshot with no
+key, and the learning loop's hypotheses are shown with their excess after
+costs, the corrected bar, and the decision.
 
-A three-tier waterfall, MAD-based outlier screening, per-provider weight caps,
-and publication gates that **withhold rather than guess**: two of the five
-indices decline to print on a typical day, and both refusals are correct.
-Storage is bitemporal and append-only, so *what did the tape say on the 25th,
-as known on the 26th?* stays answerable after any correction.
-
-**[→ Methodology, and what the data turned out to show](https://github.com/henryzhangpku/gpu-price-index)**
-
----
-
-### Token Price Index
-
-The same question asked of LLM inference, and a different answer: **most of this
-market cannot carry an index at all.** A frontier model has exactly one seller,
-so there is no second price to discover and an average of one company's list
-price is that company's list price wearing an index's name. Open weights are the
-opposite — the same weights served by many sellers competing on price — and that
-is the only place a token benchmark means anything.
-
-Collected daily from live per-seller pricing. Six contracts, and the refusals are
-the product: one withheld on dispersion, one refused by construction.
-
-Building it turned up something I did not expect. **Fifteen of twenty-seven
-sellers of the same weights quote an identical price**, so the median *is* that
-price, more than half the deviations from it are zero, and the median absolute
-deviation is zero — the dispersion gate reported perfect agreement on a market
-spanning six times. Qn fails identically, because more than a quarter of pairwise
-differences are also zero. The compute benchmark has no such problem: no two GPU
-providers quote alike, because rental prices are set independently while token
-prices are copied from a publisher's reference rate.
-
-Two indices, two scale estimators, and the justification is measured rather than
-stylistic.
-
-**[→ The findings, with the numbers](https://github.com/henryzhangpku/token-price-index/blob/main/docs/FINDINGS.md)**
-
----
-
-### IPO Price Model
-
-The same question a third time, on the thinnest public record a listed
-company will ever have: the day before it trades. An offer price, a filed
-range, a deal size, an exchange, and what the last few listings did. From
-exactly that, a calibrated interval for the first close — gradient-boosted
-quantiles, then split-conformal calibration on a later window, so the
-coverage holds without a distributional assumption — and a reference the
-model has to beat: the offer price with the calibration window's empirical
-quantiles around it. A narrower interval at the same coverage, or the
-reference stands.
-
-Every feature is on a declared T-1 list and a leakage assertion refuses any
-other; the regime feature aggregates only listings that closed strictly before
-the decision date; splits are chronological or the run stops. And a
-publication gate with three declared reasons — no filed range, too few recent
-comparables, an interval wider than the evidence can carry — that withholds
-the number rather than print a midpoint, and reports what the refusals cost.
-
-**[→ github.com/henryzhangpku/ipo-price-model](https://github.com/henryzhangpku/ipo-price-model)**
+**[→ Live demo, and the code](https://henryzhangpku.github.io/equity-scout/)**
 
 ---
 
@@ -169,39 +95,6 @@ with a runner, a Dockerfile and a schedule, generated without translating
 anything. Every command ends by naming the next one.
 
 **[→ github.com/henryzhangpku/research2prod](https://github.com/henryzhangpku/research2prod)**
-
----
-
-### jevelin — fast, low-cost real-time agents
-
-The indices and the research loop run on a daily clock. This one runs inside a
-phone call.
-
-A real-time voice agent makes a dozen small decisions on every turn — *is this
-person reading out a card number, do they want a human, is my draft reply safe
-to say* — and most stacks send each one to an LLM, which puts every decision in
-the latency budget and the token bill of every turn. `jevelin` is a working
-reference design for the other approach: take those decisions **off the
-critical path** and answer them with a System One classifier — typed,
-calibrated probabilities, no generated text, a few hundred milliseconds —
-running alongside the conversation instead of in front of it. Every turn is
-scheduled as a dependency graph, so time to first audio is simply its critical
-path.
-
-On the declared profile, p50 time to first audio falls from 1,656 ms to 626 ms,
-model cost per call from $0.041 to $0.003, and risky drafts spoken to the caller
-from 66 to **zero** — because the guard runs before the words are said and
-**fails closed** when the classifier is late. The domain lives in data: a pack
-is a JSON file, and a second pack turns the same code into a brokerage desk. The
-classifier is an interface, not a vendor — a hosted API or a local Apache-2.0
-engine, with the pack unchanged.
-
-The numbers are simulated from a latency and price profile, not measured on
-production traffic, and the README says so before it shows them. The finding
-that mattered: this is a router, not an agent. The small decisions are where
-the latency and the risk live; the LLM is the part that can wait.
-
-**[→ Browser demo, and the code](https://henryzhangpku.github.io/jevelin/)**
 
 ---
 
