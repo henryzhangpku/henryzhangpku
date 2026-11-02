@@ -32,8 +32,8 @@ de-duplication, and a hash-chained ledger that keeps every refutation.
 Most of what comes back is a documented no, and the ledger keeps those too — a
 refutation nobody wrote down gets rediscovered, at cost, by the next person.
 **Now open source**: the runner, the declarative contract, fixed validators,
-the options backtest mechanics, ~50 preregistered experiments, 20 missions with
-their findings, and 523 tests that need neither network nor keys.
+the options backtest mechanics, a public pre-registration with its
+hash-chained ledger, and 500+ tests that need neither network nor keys.
 
 **[→ github.com/henryzhangpku/autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)**
 
@@ -141,4 +141,4 @@ MS Software Engineering, Peking University · BS Computer Science, Nankai Univer
 
 ---
 
-[LinkedIn](https://www.linkedin.com/in/henryzhang99/) · [officialhenryzhang.com](https://www.officialhenryzhang.com/)
+[LinkedIn](https://www.linkedin.com/in/henryzhang99/) · [Substack](https://henryzhang.substack.com) · [officialhenryzhang.com](https://www.officialhenryzhang.com/)
