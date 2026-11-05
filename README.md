@@ -37,6 +37,8 @@ hash-chained ledger, and 500+ tests that need neither network nor keys.
 
 **[→ github.com/henryzhangpku/autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)**
 
+**Paper:** [Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found](https://arxiv.org/abs/2611.06607) (arXiv:2611.06607, November 2026)
+
 ---
 
 ### research2prod — research to production, with no handover
@@ -120,7 +122,7 @@ For reference, the same discipline outside Python, each with a live page: [tickf
 
 | | |
 |---|---|
-| **[autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)** | An LLM proposes trading hypotheses, trusted code decides — staged holdouts, gate sets, and a hash-chained ledger of every refutation |
+| **[autonomous-quant-researcher](https://github.com/henryzhangpku/autonomous-quant-researcher)** | An LLM proposes trading hypotheses, trusted code decides — staged holdouts, gate sets, and a hash-chained ledger of every refutation. Paper: [arXiv:2611.06607](https://arxiv.org/abs/2611.06607) |
 | **[research2prod](https://github.com/henryzhangpku/research2prod)** | Write the signal once; it is already production code — the guided bridge from quant research to a scheduled, audited job |
 | **[mft-engine](https://github.com/henryzhangpku/mft-engine)** | Mid-frequency trading in Rust: Kalshi probability ladders and classifier-scored posts as signals, code as the gate, one code path for backtest and live paper, an experiment ledger |
 
