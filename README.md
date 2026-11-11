@@ -143,4 +143,4 @@ MS Software Engineering, Peking University · BS Computer Science, Nankai Univer
 
 ---
 
-[LinkedIn](https://www.linkedin.com/in/henryzhang99/) · [Substack](https://henryzhang.substack.com) · [officialhenryzhang.com](https://www.officialhenryzhang.com/)
+[LinkedIn](https://www.linkedin.com/in/henryzhang99/) · [Substack](https://henryzhang.substack.com) · [officialhenryzhang.com](https://www.officialhenryzhang.com/) · [ORCID](https://orcid.org/0009-0000-1891-3607) · [SSRN](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3016152) · [arXiv](https://arxiv.org/a/zhang_h_21)
