@@ -18,6 +18,21 @@ research that is allowed to say "no edge" before money finds out.
 [research2prod](https://github.com/henryzhangpku/research2prod) (shipping it: research code that is already production code) ·
 [mft-engine](https://henryzhangpku.github.io/mft-engine/) (running it: one Rust code path for backtest and live)
 
+### Papers
+
+All November 2026, Henry Zhang, Independent Researcher. Each one pre-registered, with the code public.
+
+- **[Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found](https://arxiv.org/abs/2611.06607)** · [arXiv:2611.06607](https://arxiv.org/abs/2611.06607) · [SSRN](https://ssrn.com/abstract=7682019)
+  An LLM proposes trading hypotheses, trusted code decides, and most of what two dozen campaigns found was a documented no.
+- **[Short Windows, Unmodelled Costs, Unknown Cutoffs: A Pre-Registered Evidence Audit of 91 LLM Trading Papers](https://ssrn.com/abstract=7687481)** · [SSRN](https://ssrn.com/abstract=7687481) · [data and code](https://github.com/henryzhangpku/llm-trading-evidence-audit)
+  Of 75 papers with a trading test, half deduct no costs, the median test window is 12 months, and 98% of those whose test may overlap the model's training data do not control for it.
+- **[Testing the Premises Behind Popular Technical-Analysis Scripts under Pre-Registration](https://ssrn.com/abstract=7687483)** · [SSRN](https://ssrn.com/abstract=7687483)
+  The shared premises behind popular drawn indicators (Fibonacci levels, regression channels, ribbons, squeezes), each tested with one frozen rule: none is supported, and every one did worse than being long in validation.
+- **[The Zero-Days-to-Expiry Put-Credit Premium from Traded Option Bars: Real, Mostly Not Drift, and Priced by First-Day Shocks](https://ssrn.com/abstract=7687498)** · [SSRN](https://ssrn.com/abstract=7687498)
+  Priced from traded option bars, the 0DTE SPY put-spread premium is real and mostly not market drift, but it misses the pre-registered bar because its losses come on the first day of shocks nobody forecasts.
+
+Work in progress: [A Pre-Registered Forward Test of an LLM News Reader in Event Contracts](https://osf.io/qu983) (pre-registered on OSF).
+
 ### Autonomous Quant Researcher
 
 An LLM proposes trading hypotheses; trusted code decides whether they are true.
