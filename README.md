@@ -31,7 +31,13 @@ All November 2026, Henry Zhang, Independent Researcher. Each one pre-registered,
 - **[The Zero-Days-to-Expiry Put-Credit Premium from Traded Option Bars: Real, Mostly Not Drift, and Priced by First-Day Shocks](https://ssrn.com/abstract=7687498)** · [SSRN](https://ssrn.com/abstract=7687498)
   Priced from traded option bars, the 0DTE SPY put-spread premium is real and mostly not market drift, but it misses the pre-registered bar because its losses come on the first day of shocks nobody forecasts.
 
-Work in progress: [A Pre-Registered Forward Test of an LLM News Reader in Event Contracts](https://osf.io/qu983) (pre-registered on OSF).
+Work in progress, registered on OSF before any outcome is scored:
+
+- [Do GPU Rental Prices Lead Consensus Revisions? A Registered Report with a Hash-Chained Protocol](https://osf.io/3hru9) (Stage 1 registered report)
+- [A Pre-Registered Forward Test of an LLM News Reader in Event Contracts](https://osf.io/qu983) (pre-registration)
+- [Can an LLM Turn Published Trading Rules into Faithful Code?](https://osf.io/68mte) (pre-registration)
+- [Frozen Forward Rule: Options Flow in Spot Crypto ETFs and the Two-Week Ether Return](https://osf.io/kbfma) (frozen forward rule)
+- [When Not to Price an IPO: A Frozen Model's Pre-Stated Band for Anthropic's First Close](https://osf.io/hb7e4) (forward test plan)
 
 ### Autonomous Quant Researcher
 
